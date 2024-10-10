@@ -35,7 +35,7 @@ spec:
       backendRefs:
         - group: net.gke.io
           kind: ServiceImport
-          name: store-west-1
+          name: luca-eu-west-1
           port: 8080
     - matches:
         - path:
@@ -44,7 +44,7 @@ spec:
       backendRefs:
         - group: net.gke.io
           kind: ServiceImport
-          name: store-west-3
+          name: luca-eu-west-3
           port: 8080
     - matches:
         - path:
@@ -53,7 +53,7 @@ spec:
       backendRefs:
         - group: net.gke.io
           kind: ServiceImport
-          name: store-west-6
+          name: luca-eu-west-6
           port: 8080
     - backendRefs:
         - group: net.gke.io
