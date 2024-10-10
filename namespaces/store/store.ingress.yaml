@@ -1,0 +1,17 @@
+apiVersion: networking.gke.io/v1
+kind: MultiClusterService
+metadata:
+  name: foo
+  namespace: bookinfo
+  annotations:
+  configsync.gke.io/cluster-name-selector: autopilot-cluster-1
+spec:
+  template:
+    spec:
+      selector:
+        app: foo
+      ports:
+      - name: web
+        protocol: TCP
+        port: 80
+        targetPort: 80
