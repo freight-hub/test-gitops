@@ -44,7 +44,7 @@ metadata:
   name: store-eu-west-3
   namespace: store
   annotations:
-    configsync.gke.io/cluster-name-selector: luca-eu-west-3
+    configsync.gke.io/cluster-name-selector: luca-eu-west3
 spec:
   selector:
     app: store
@@ -58,4 +58,4 @@ metadata:
   name: store-eu-west-3
   namespace: store
   annotations:
-    configsync.gke.io/cluster-name-selector: luca-eu-west-3
+    configsync.gke.io/cluster-name-selector: luca-eu-west3
