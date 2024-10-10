@@ -1,8 +1,11 @@
+---
 apiVersion: v1
 kind: Service
 metadata:
-  name: store
+  name: store-eu-west-6
   namespace: store
+  annotations:
+    configsync.gke.io/cluster-name-selector: luca-eu-west-6
 spec:
   selector:
     app: store
@@ -13,6 +16,7 @@ spec:
 kind: ServiceExport
 apiVersion: net.gke.io/v1
 metadata:
-  name: store
+  name: store-eu-west-6
   namespace: store
-
+  annotations:
+    configsync.gke.io/cluster-name-selector: luca-eu-west-6
