@@ -58,5 +58,16 @@ spec:
     - backendRefs:
         - group: net.gke.io
           kind: ServiceImport
-          name: store
+          name: store-eu-west-1
           port: 8080
+          weight: 40
+        - group: net.gke.io
+          kind: ServiceImport
+          name: store-eu-west-3
+          port: 8080
+          weight: 30
+        - group: net.gke.io
+          kind: ServiceImport
+          name: store-eu-west-6
+          port: 8080
+          weight: 30                    
